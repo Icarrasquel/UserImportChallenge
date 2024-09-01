@@ -1,19 +1,18 @@
 # Importacion de Usuarios  "UserImportApplication"
 
-Este proyecto tiene como finalidad la importacion y/o actualizacion de usuarios en la base de datos, mediantes un
+Este proyecto tiene como finalidad la importación y/o actualización de usuarios en la base de datos, mediante un
 command "commandImportUsers", el cual recibe datos mediante un ENDPOINT.
 
 # Clonar proyecto 
 
-    Clone el proyecto y ajuste todos los detalles requeridos para que el proyecto quede completamente
-    operativo.
+Clone el proyecto y ajuste todos los detalles requeridos para que el proyecto quede completamente operativo.
 
-        Agregado el archivo .env, con sus respectivas credenciales de BBDD.
-        Generando Key.
-        Intalando composer sino lo tiene instalado.
+    1) Agregando el archivo .env, con sus respectivas credenciales de BBDD.
+    2) Generando Key.
+    3) Instalando composer si no lo tiene instalado.
 
 
-# IMPORTANTE: Configuracion del Crontab para ejecución del command
+# Configuración del Crontab para ejecución del command
 
     1) Debe abrir el su crontad, con el mismo usuario que instalo dicho proyecto.
 
@@ -25,17 +24,16 @@ command "commandImportUsers", el cual recibe datos mediante un ENDPOINT.
 
     3) Debe guardar y salir.
 
-# Ya deberia quedar operativo el Command.
+    4) Ya deberia quedar operativo el Command.
 
-# Para verificar si esta corriendo su crontab, puede verificar con el siguiente comando:
+    5) Para verificar si esta corriendo su crontab, puede verificar con el siguiente comando:
 
-    grep CRON /var/log/syslog
+        grep CRON /var/log/syslog
 
-# Si quiere probarlo manualmente, ejecute en la ruta del proyecto el siguiente comando:
+    6) Si quiere probarlo manualmente, ejecute en la ruta del proyecto el siguiente comando:
 
-    php artisan commandImportUsers
+        php artisan commandImportUsers
 
-# FIN
 
 
 
